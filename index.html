@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>直播店铺</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" href="swiper/css/swiper.min.css">
+</head>
+<style>
+    .layui-tab{
+        margin: 0;
+    }
+    .layui-rate li i.layui-icon{
+        font-size: 16px;
+        margin-right: 2px;
+    }
+    .layui-tab-title{
+        background-color: white;
+    }
+    .layui-tab-title .layui-this{
+         color: #cf292e;
+     }
+    .layui-tab-content{
+        padding: 0;
+    }
+    .layui-badge-rim, .layui-colla-content, .layui-colla-item, .layui-collapse, .layui-elem-field, .layui-form-pane .layui-form-item[pane], .layui-form-pane .layui-form-label, .layui-input, .layui-layedit, .layui-layedit-tool, .layui-quote-nm, .layui-select, .layui-tab-bar, .layui-tab-card, .layui-tab-title, .layui-tab-title .layui-this:after, .layui-textarea{
+        border: none;
+    }
+    .layui-tab-title .layui-this:after{
+        border-bottom: 2px solid #cf292e;
+    }
+</style>
+<body>
+<!-- 头部 -->
+<div class="titles">
+    <div class="titlesFontAdress layui-col-xs3">
+        <span>榕华大道</span>
+    </div>
+    <div class="layui-col-xs7">
+        <p class="titles_font">直播店铺</p>
+    </div>
+    <div class="titles_Img layui-col-xs1">
+        <img src="image/2.png">
+    </div>
+    <div class="titles_Img layui-col-xs1">
+        <img src="image/1.png">
+    </div>
+</div>
+<!-- 选项卡 -->
+<div class="showFixed">
+    <span>我要直播</span>
+</div>
+<div class="tabsList">
+    <div class="layui-tab">
+        <div class="swiper-container" style="background-color: white;border-bottom: 1px solid #eeeeee">
+            <ul class="layui-tab-title swiper-wrapper">
+                <li class="layui-this layui-col-xs3" style="max-width: 25%">精选生活</li>
+                <li class="layui-col-xs3" style="max-width: 25%">美食味蕾</li>
+                <li class="layui-col-xs3" style="max-width: 25%">音像器材</li>
+                <li class="layui-col-xs3" style="max-width: 25%">摄影摄像</li>
+            </ul>
+        </div>
+        <div class="layui-tab-content" id="layuiTabContent">
+            <div class="layui-tab-item layui-show">
+                <div class="swiperLife">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="max-width: 40%">
+                                <div class="lifeContent">
+                                    <div>
+                                        <span>LIVE</span>
+                                        <img src="image/img1.png">
+                                    </div>
+                                    <p class="over1 title1">男人装</p>
+                                    <p class="over1 title2">看有品绅士风格</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" style="max-width: 40%">
+                                <div class="lifeContent">
+                                    <div>
+                                        <span>LIVE</span>
+                                        <img src="image/img1.png">
+                                    </div>
+                                    <p class="over1 title1">男人装</p>
+                                    <p class="over1 title2">看有品绅士风格</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" style="max-width: 40%">
+                                <div class="lifeContent">
+                                    <div>
+                                        <span>LIVE</span>
+                                        <img src="image/img1.png">
+                                    </div>
+                                    <p class="over1 title1">男人装</p>
+                                    <p class="over1 title2">看有品绅士风格</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiperLifeContent">
+                    <div class="swiperLifeContent_Title">
+                        <!-- 标题 -->
+                        <p class="icon"></p>
+                        <p class="over1 title">错过这些水果还要再等一年</p>
+                        <!-- 内容 -->
+                        <div class="content">
+                            <div class="contentTopLeft">
+                                <span class="contentTopLeft1">已售655</span>
+                                <span class="contentTopLeft2">
+                                    <img src="image/4.png">
+                                    <span>2259人关注</span>
+                                </span>
+                            </div>
+                            <!-- 评分 -->
+                            <div class="contentTopRight">
+                                <div id="test1"></div>
+                            </div>
+                            <!-- 刷礼物效果 -->
+                            <div class="contentGif">
+                                <img src="image/1.gif">
+                                <img src="image/5.png" style="width: 80%">
+                            </div>
+                            <!-- 图片 -->
+                            <div class="contentImg">
+                                <img src="image/img1.png">
+                            </div>
+                            <div class="contentBottom">
+                                <div class="contentBottomImg">
+                                    <img src="image/img1.png">
+                                </div>
+                                <div class="contentBottomTitle">
+                                    <span class="over1 bottomTitle">古溪礼嘉诚购物商场</span>
+                                    <span  class="contentBottomTitleFont">滴滴送达</span>
+                                    <p class="contentBottomTitleCon">起送费￥15 | 配送费￥2 | 30分钟出单</p>
+                                </div>
+                                <div class="contentBottomContent">
+                                    <p class="over1"><span style="background-color: #fa2f32;">首</span>新用户下单立减8元，满20元减10元。满30元减20元</p>
+                                    <p class="over1"><span style="background-color: #fa6108;">惠</span>全店消费满10元减8元，满20元减10元。满30元减20元</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiperLifeContent_Title">
+                        <!-- 标题 -->
+                        <p class="icon"></p>
+                        <p class="over1 title">错过这些水果还要再等一年</p>
+                        <!-- 内容 -->
+                        <div class="content">
+                            <div class="contentTopLeft">
+                                <span class="contentTopLeft1">已售655</span>
+                                <span class="contentTopLeft2">
+                                    <img src="image/4.png">
+                                    <span>2259人关注</span>
+                                </span>
+                            </div>jiu
+                            <!-- 评分 -->
+                            <div class="contentTopRight">
+                                <div id="test2"></div>
+                            </div>
+                            <!-- 刷礼物效果 -->
+                            <div class="contentGif">
+                                <img src="image/1.gif">
+                                <img src="image/5.png" style="width: 80%">
+                            </div>
+                            <!-- 图片 -->
+                            <div class="contentImg">
+                                <img src="image/img1.png">
+                            </div>
+                            <div class="contentBottom">
+                                <div class="contentBottomImg">
+                                    <img src="image/img1.png">
+                                </div>
+                                <div class="contentBottomTitle">
+                                    <span class="over1 bottomTitle">古溪礼嘉诚购物商场</span>
+                                    <span  class="contentBottomTitleFont">滴滴送达</span>
+                                    <p class="contentBottomTitleCon">起送费￥15 | 配送费￥2 | 30分钟出单</p>
+                                </div>
+                                <div class="contentBottomContent">
+                                    <p class="over1"><span style="background-color: #fa2f32;">首</span>新用户下单立减8元，满20元减10元。满30元减20元</p>
+                                    <p class="over1"><span style="background-color: #fa6108;">惠</span>全店消费满10元减8元，满20元减10元。满30元减20元</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-tab-item">
+                <div class="tabTop">
+                    <div class="tabTopContent">
+                        <p style="background-color: #cf292e;color: white;">全部</p>
+                    </div>
+                    <div class="tabTopContent">
+                        <p>自助餐</p>
+                    </div>
+                    <div class="tabTopContent">
+                        <p>下午茶</p>
+                    </div>
+                    <div class="tabTopContent">
+                        <p>蛋糕</p>
+                    </div>
+                    <div class="tabTopContent">
+                        <p>奶茶</p>
+                    </div>
+                    <div class="tabTopContent">
+                        <p>烧烤</p>
+                    </div>
+                    <div class="tabTopContent">
+                        <p>面食</p>
+                    </div>
+                    <div class="tabTopContent">
+                        <p>快餐</p>
+                    </div>
+                    <div class="tabTopContent">
+                        <p>小吃</p>
+                    </div>
+                    <div class="tabTopContent">
+                        <p>夜宵</p>
+                    </div>
+                </div>
+                <div class="swiperLifeContent">
+                    <div class="swiperLifeContent_Title">
+                        <!-- 标题 -->
+                        <p class="icon"></p>
+                        <p class="over1 title">错过这些水果还要再等一年</p>
+                        <!-- 内容 -->
+                        <div class="content">
+                            <div class="contentTopLeft">
+                                <span class="contentTopLeft1">已售655</span>
+                                <span class="contentTopLeft2">
+                                    <img src="image/4.png">
+                                    <span>2259人关注</span>
+                                </span>
+                            </div>
+                            <!-- 评分 -->
+                            <div class="contentTopRight">
+                                <div id="test4"></div>
+                            </div>
+                            <!-- 刷礼物效果 -->
+                            <div class="contentGif">
+                                <img src="image/1.gif">
+                                <img src="image/5.png" style="width: 80%">
+                            </div>
+                            <!-- 图片 -->
+                            <div class="contentImg">
+                                <img src="image/img1.png">
+                            </div>
+                            <div class="contentBottom">
+                                <div class="contentBottomImg">
+                                    <img src="image/img1.png">
+                                </div>
+                                <div class="contentBottomTitle">
+                                    <span class="over1 bottomTitle">古溪礼嘉诚购物商场</span>
+                                    <span  class="contentBottomTitleFont">滴滴送达</span>
+                                    <p class="contentBottomTitleCon">起送费￥15 | 配送费￥2 | 30分钟出单</p>
+                                </div>
+                                <div class="contentBottomContent">
+                                    <p class="over1"><span style="background-color: #fa2f32;">首</span>新用户下单立减8元，满20元减10元。满30元减20元</p>
+                                    <p class="over1"><span style="background-color: #fa6108;">惠</span>全店消费满10元减8元，满20元减10元。满30元减20元</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiperLifeContent_Title">
+                        <!-- 标题 -->
+                        <p class="icon"></p>
+                        <p class="over1 title">错过这些水果还要再等一年</p>
+                        <!-- 内容 -->
+                        <div class="content">
+                            <div class="contentTopLeft">
+                                <span class="contentTopLeft1">已售655</span>
+                                <span class="contentTopLeft2">
+                                    <img src="image/4.png">
+                                    <span>2259人关注</span>
+                                </span>
+                            </div>
+                            <!-- 评分 -->
+                            <div class="contentTopRight">
+                                <div id="test5"></div>
+                            </div>
+                            <!-- 刷礼物效果 -->
+                            <div class="contentGif">
+                                <img src="image/1.gif">
+                                <img src="image/5.png" style="width: 80%">
+                            </div>
+                            <!-- 图片 -->
+                            <div class="contentImg">
+                                <img src="image/img1.png">
+                            </div>
+                            <div class="contentBottom">
+                                <div class="contentBottomImg">
+                                    <img src="image/img1.png">
+                                </div>
+                                <div class="contentBottomTitle">
+                                    <span class="over1 bottomTitle">古溪礼嘉诚购物商场</span>
+                                    <span  class="contentBottomTitleFont">滴滴送达</span>
+                                    <p class="contentBottomTitleCon">起送费￥15 | 配送费￥2 | 30分钟出单</p>
+                                </div>
+                                <div class="contentBottomContent">
+                                    <p class="over1"><span style="background-color: #fa2f32;">首</span>新用户下单立减8元，满20元减10元。满30元减20元</p>
+                                    <p class="over1"><span style="background-color: #fa6108;">惠</span>全店消费满10元减8元，满20元减10元。满30元减20元</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-tab-item">内容3</div>
+            <div class="layui-tab-item">内容4</div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="layui/layui.js"></script>
+<script src="swiper/js/swiper.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/laytpl.js"></script>
+</body>
+</html>
