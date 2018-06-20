@@ -94,4 +94,16 @@ layui.use('rate', function(){
         ,readonly: true
         ,theme: '#FA2F32'
     });
+    rate.render({
+        elem: '#test3'
+        ,value: 5
+        ,readonly: true
+        ,theme: '#FA2F32'
+    });
+    rate.render({
+        elem: '#test4'
+        ,value: 5
+        ,readonly: true
+        ,theme: '#FA2F32'
+    });
 });
